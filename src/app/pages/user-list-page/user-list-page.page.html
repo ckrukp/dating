@@ -1,0 +1,70 @@
+
+<ion-content>
+
+  <div class="home-header">
+    <div class="home-header-title-part">
+      <div class="home-header-call" id="home-header-call">
+        50
+      </div>
+      <div class="home-header-title">TikTok Partner</div>
+      <div class="home-header-vip" id="home-header-vip">
+        <ion-img src="../../../assets/images/home_header_vip_eclipse.png" (click)="displayVIPSettings()"></ion-img>
+      </div>
+    </div>
+  </div>
+
+  <div class="userlist-content">
+
+    <div class="userlist-photos-slider">
+
+      <div class="userlist-photos-slider-item" *ngFor="let userimage of userlist_image_array; let i = index" [attr.data-index]="i"
+        [style.background-image]="'url(' + userimage + ')'"> 
+        <ion-icon name="add-circle" *ngIf="i == 0" color="primary"></ion-icon>
+      </div>
+    </div>
+
+    <div class="userlist-photos-condition">
+      <div>
+        <ion-label>Detaily Arama:</ion-label>
+      </div>
+      <div>
+        <ion-button>Kadin</ion-button>
+      </div>
+      <div>
+        <ion-button>18-19</ion-button>
+      </div>
+      <div>
+        <ion-button>Turkiye</ion-button>
+      </div>
+    </div>
+
+    <div class="userlist-photos-gallery">
+      <ion-grid>
+        <ion-row>
+          <ion-col class="userlist-photos-gallery-col" 
+            *ngFor="let userimage of userlist_image_array; let i = index" [attr.data-index]="i">
+            <!--col-6 col-md-4 col-xl-3-->
+            <div class="userlist-photos-gallery-one"
+              [style.background-image]="'url(' + userimage + ')'">
+              <div class="userlist-per-content">
+                <div class="userlist-per-content-left">
+                  <img class="userlist-per-connect" src="../../../assets/images/net-connection-on.png" />
+                  <div class="userlist-per-name">{{userlist_name_array[i]}}</div>
+                </div>
+                <label class="userlist-per-age">{{userlist_age_array[i]}}</label>
+              </div>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </div>
+
+  <div class="userlist-filter">
+    <div class="userlist-filter-part">
+      <button class="userlist-filter-btn" (click)="displayUserFilter()"><ion-icon name="options"></ion-icon> Filter</button>
+      <!--button *ngIf="filter === 0" class="userlist-filter-btn" (click)="displayUserFilter()"><ion-icon name="options"></ion-icon> Filter</button-->
+      <!--button *ngIf="filter === 1" class="userlist-filter-btn" (click)="displayUserList()" id="userlist-filter-btn">Done</button-->
+    </div>
+  </div>
+</ion-content>

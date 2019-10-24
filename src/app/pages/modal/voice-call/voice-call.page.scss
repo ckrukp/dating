@@ -1,0 +1,76 @@
+.voice-call-main{
+    width:100%;
+    height: 100%;
+    background-color: #ea1c5c;
+    text-align: center;
+    color:white;
+}
+
+.voice-call-close-part {
+    background-color: #ea1c5c;
+    width:100%;
+}
+
+.voice-call-close-btn {
+    color:white;
+    width:30px;
+    height:30px;
+    padding: 20px 0px 0px 20px;
+}
+
+.voice-call-photo {
+    padding-top:10%;
+}
+
+.voice-call-photo-img {
+    width:160px;
+    height: 160px;
+    border-radius: 50%;
+    background-color: #f0618d;
+    margin:auto;
+}
+
+.voice-call-photo-img img{
+    width:140px;
+    height:140px;
+    border-radius: 50%;
+    margin:10px;
+}
+
+.voice-call-name {
+    font-family: 'SF-Pro-Display-Semibold';
+    font-size: 20px;
+    padding-top:10px;
+}
+
+.voice-call-status {
+    font-family: 'SF-Pro-Display-Light';
+    font-size: 15px;
+    padding-top:10px;
+    padding-bottom: 50px;
+}
+
+.voice-call-set-volume, .voice-call-set-mute {
+    width:70px;
+    height:70px;
+}
+
+.voice-call-set-volume {
+    margin-right: 10%;
+}
+
+.voice-call-set-mute {
+    margin-left: 10%;
+}
+
+.voice-call-call {
+    width:100%;
+    bottom: 8%;
+    position: fixed;
+}
+
+.voice-call-button {
+    width:100px;
+    height:100px;
+    text-align: center;
+}

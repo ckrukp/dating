@@ -1,0 +1,135 @@
+
+.login-signup-header {
+    --background: none;
+    background-image: url('../../assets/images/login-bg-shadow.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+    background-color:#ea1c5c;
+    color:#fff !important;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.login-signup-header .logo {
+    background-image: url('../../assets/images/login-logo.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    padding-top:70px;
+    background-size: contain;
+}
+
+.login-signup-header .title {
+    padding-top:20px;
+    padding-bottom:20px;
+    font-family: 'SF-Pro-Display-Bold';
+    font-size: 18px;
+}
+
+.login-signup-tab {
+    background-color:#ea1c5c;
+    padding-bottom:20px;
+    text-align: center;
+
+    div {
+        display:inline-block;
+        color:#b9b9b9;
+        padding-right: 30px;
+        padding-left: 30px;
+        padding-bottom:10px;
+        cursor: pointer;
+        font-family: 'SF-Pro-Display-Semibold';
+        letter-spacing: 1px;
+    }
+    
+}
+
+.login-signup-content {
+    background: url('../../assets/images/login-bg-heart.png') -85px -50px no-repeat, url('../../assets/images/login-bg-heart.png') calc(100% + 85px) -50px no-repeat;
+    background-size:200px;
+    padding: 1px 5% 0px 5%;
+}
+
+.login-form-part, .signup-form-part {
+    margin-top:-25px;
+}
+
+ion-item ion-label {
+    color:#b9b9b9;
+    font-family: 'SF-Pro-Display-Thin';
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.login-forgot-item{
+    height: 50px;
+}
+
+.login-form ion-card, .signup-form ion-card {
+    background-color: #fff;
+    padding-bottom: 40px;
+}
+
+.login-form ion-card ion-item, .signup-form ion-card ion-item {
+    padding-right:15px;
+    //padding-left:15px;
+}
+
+.login-forgot-pwd {
+    text-align: right;
+    color: #ea1c5c !important;
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+
+.submit-login, .submit-signup {
+    margin-top:-50px;
+    padding-right:40px;
+    padding-left:40px;
+    font-family: 'SF-Pro-Display-Semibold';
+    font-size:17px;
+    letter-spacing: 1px;
+}
+
+.login-social {
+    text-align: center;
+    color:#b9b9b9;
+    font-family: 'SF-Pro-Display-Light';
+    font-size:18px;
+    letter-spacing: 1px;
+    padding-top:40px;
+    padding-bottom: 30px;
+}
+
+.login-social .login-social-title {
+    padding-bottom: 10px;
+}
+
+.login-social .login-social-title img{
+    width:70px; 
+    height:1px;
+    margin-left:10px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.login-social .login-social-imgs .social-icon {
+    width: 40px;
+    height: 40px;
+    margin:5px;
+}
+
+.login-bottom {
+    color:#595ea8;
+    width:100%;
+    text-align: center;
+    font-size: 13px;
+    font-family: 'SF-Pro-Display-Regular';
+    line-height: 1.3;
+    padding-bottom: 20px;
+    opacity: 0.7;
+}
+
+.login-bottom a {
+    color:#ff4b55;
+}

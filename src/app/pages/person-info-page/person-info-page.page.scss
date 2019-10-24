@@ -1,0 +1,162 @@
+.thumb-img {
+    width:100%;
+    min-height:450px;
+}
+
+.photo-header-carousel-slides {
+    --bullet-background: #fff;
+    --bullet-background-active: #ea1c5c;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.photo-header-carousel-slide{
+    position:relative;
+    display:inline-block;
+}
+
+.photo-header-carousel-slide:after {
+    content:'';
+    position:absolute;
+    left:0; top:0;
+    width:100%; height:100%;
+    display:inline-block;
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 70%, rgba(255, 255, 255, 1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(70%,rgba(255, 255, 255, 1)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 70%,rgba(255, 255, 255, 1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(0,0,0,0) 70%,rgba(255, 255, 255, 1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(0,0,0,0) 7%,rgba(255, 255, 255, 1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 70%,rgba(255, 255, 255, 1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002f4b', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+
+.photo-header-carousel-slide img{
+    display: block;
+}
+
+.person-info-content {
+    position: relative;
+    margin-top:-100px;
+    z-index: 11;
+}
+
+.person-info-content ion-card {
+    background-color:#fff;
+}
+
+.person-info-content-name, .person-info-content-sex{
+    //margin-top:-100px;
+    display: inline-block;
+
+}
+
+.person-info-content-name {
+    font-family: 'SF-Pro-Display-Bold';
+    font-size:22px;
+}
+
+.person-info-content-sex{
+    width:18px;
+    height:18px;
+    padding-top:3px;
+    padding-bottom:3px;
+    background-color:#ea1c5c;
+    border-radius: 50%;
+    margin-left:10px;
+    margin-bottom: 10px;
+}
+
+.person-info-content-position-img, .person-info-content-position-label, .person-info-content-position-distance {
+    display: inline-block;
+}
+
+.person-info-content-position-img {
+    width:15px;
+    height: 15px;
+    margin-right:10px;
+}
+
+.person-info-content-position-label {
+    color:#fcb805;
+    font-family: 'SF-Pro-Display-Regular';
+    font-size:18px;
+}
+
+.person-info-content-position-distance {
+    color:#ea1c5c;
+    background-color: #f9c1d2;
+    font-family: 'SF-Pro-Display-Regular';
+    float: right;
+    font-size:12px;
+    margin-top:5px;
+}
+
+.person-info-content-table-title {
+    color:#ea1c5c;
+    font-family: 'SF-Pro-Display-Semibold';
+    font-size:18px;
+}
+
+.person-info-content-table-content {
+    color:#47535f;
+    font-family: 'SF-Pro-Display-Regular';
+    font-size:13px;
+}
+
+.person-info-content-td-title {
+    //width:40%;
+    color: #6b7282;
+    background-color: #f0f2f6;
+    padding-left:10px;
+}
+
+.person-info-content-td-content {
+    //width:60%;
+    color:#ea1c5c;
+    border-bottom:1px solid #fee !important;
+    border-radius: 0px 0px 0px 0px;
+    padding: 8px 5px 8px 15px ;
+}
+
+.person-info-content-table-header {
+    font-family: 'SF-Pro-Display-Semibold';
+    font-size:20px;
+    color:#ea1c5c;
+}
+
+.person-info-content-table {
+    border:1px solid #fee !important;
+    border-radius: 5px;
+    font-family: 'SF-Pro-Display-Regular';
+    font-size: 14px;
+}
+
+.person-info-content-table table {
+    width:100%;
+}
+
+.person-info-footer-container{
+    display: table;
+}
+
+.person-info-footer {
+    display:table-cell;
+    text-align: center;
+}
+
+.person-info-footer div{
+    display: inline-block;
+    vertical-align: middle;
+    padding:5px;
+}
+
+.person-info-footer-like, .person-info-footer-message {
+    width:50px;
+}
+
+.person-info-footer-dislike, .person-info-footer-person {
+    width:60px;
+}
+
+.person-info-footer-call {
+    width:70px;
+}

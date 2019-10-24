@@ -1,0 +1,91 @@
+<ion-header>
+  <div class="home-header">
+    <div class="home-header-title-part">
+      <div class="home-header-left">
+        <div>
+          <ion-icon class="home-header-left-before" name="ios-arrow-back" (click)="displayBackPage()"></ion-icon>
+        </div>
+        <div class="home-header-left-avatar-part">
+          <img class="home-header-left-avatar" src="../../../assets/photos/photo_large1.png">
+        </div>
+        <div class="home-header-left-name-part">
+          <span class="home-header-left-name">Aamir</span>
+          <br>
+          <span class="home-header-left-status">Watching</span>
+        </div>
+      </div>
+      <div class="home-header-right">
+        <div>
+          <img src="../../../assets/images/chat-header-voice-call.png" (click)="displayVoiceCall()" />
+        </div>
+        <div>
+          <img src="../../../assets/images/chat-header-video-call.png" />
+        </div>
+        <div>
+          <ion-icon class="home-header-right-more" name="md-more"></ion-icon>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-header>
+
+<ion-content>
+  <ion-grid class="message-content">
+    <ion-row *ngFor="let message of messages">
+
+      <div class='delivered-start-time' *ngIf="message.status === 'Delivered'">
+          {{message.createdAt | date:'EEEE, hh:mm a'}}
+      </div>
+
+      <ion-col size="9" *ngIf="currentUser !== message.user" >
+        <div class="message other-message">{{message.msg}}</div>
+        <div class="other-time" text-right>
+          {{message.status}} {{message.createdAt | date:'short'}}
+        </div>
+      </ion-col>
+
+      <ion-col offset="3" size="9" *ngIf="currentUser === message.user">
+          <div class="message my-message">{{message.msg}}</div>
+          <div class="my-time" text-right>
+            {{message.status}} {{message.createdAt | date:'shortTime'}}
+          </div>
+        </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="light">
+    <ion-row class="sms-send-add-icon" align-items-center no-padding>
+      <ion-col size="2">
+        <img class="sms-send-add-clock" src="../../../assets/images/sms_send_icon_clock.png" />
+      </ion-col>
+      <ion-col size="2">
+        <img class="sms-send-add-emoji" src="../../../assets/images/sms_send_icon_happy.png" />
+      </ion-col>
+      <ion-col size="2">
+        <img class="sms-send-add-picture" src="../../../assets/images/sms_send_icon_picture.png" />
+      </ion-col>
+      <ion-col size="2">
+        <img class="sms-send-add-camera" src="../../../assets/images/sms_send_icon_camera.png" />
+      </ion-col>
+      <ion-col size="2">
+        <img class="sms-send-add-mic" src="../../../assets/images/sms_send_icon_microphone.png" />
+      </ion-col>
+      <ion-col size="2">
+        <img class="sms-send-add-other" src="../../../assets/images/sms_send_icon_layer.png" />
+      </ion-col>
+    </ion-row>
+
+    <ion-row align-items-center no-padding>
+      <ion-col size="10">
+        <textarea autosize maxRows="4" [(ngModel)] ="newMsg" class="message-input" placeholder="Write Message"></textarea>
+      </ion-col>
+      <ion-col size="2">
+        <img src="../../../assets/images/sms_send_icon_sender.png" class="msg-btn" (click)="sendMessage()" />
+      </ion-col>
+    </ion-row>
+
+    <!--app-emoji-picker class="sms-send-emoji"></app-emoji-picker-->
+  </ion-toolbar>
+</ion-footer>

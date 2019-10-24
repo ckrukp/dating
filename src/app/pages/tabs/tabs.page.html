@@ -1,0 +1,75 @@
+<!--ion-header>
+  <ion-toolbar>
+    <ion-title>tabs</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+</ion-content-->
+
+<ion-tabs>
+  <ion-tab-bar slot='bottom' class="home-tab-bg">
+    <ion-tab-button class="home-tab-list" tab="user-list-page">
+      <ion-icon ios="ios-list" md="md-list"></ion-icon>
+      <ion-label>User List</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button class="home-tab-message" tab="message-page">
+      <ion-icon ios="ios-chatbubbles" md="md-chatbubbles"></ion-icon>
+      <ion-label>Message</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button class="home-tab-tinderlike" tab="tinder-like-page">
+        <ion-icon class="tinder-like-page-icon" ios="ios-heart" md="md-heart"></ion-icon>
+        <ion-label class="tinder-like-page-label">Tinder like</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button class="home-tab-chat" (click)="displayChat()">
+      <ion-icon ios="ios-happy" md="md-happy"></ion-icon>
+      <ion-label>Chats</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button class="home-tab-profile" tab="profile-page">
+      <ion-icon ios="ios-contact" md="md-contact"></ion-icon>
+      <ion-badge >22</ion-badge>
+      <ion-label>Profile</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
+
+<!--ion-tabs>
+    <ion-tab-bar slot='bottom' class="home-tab-bg">
+      <ion-tab-button class="home-tab-list" tab="user-list-page">
+        <img class="home-tab-ulist-img" src="../../../assets/images/home_tab_list_select.png" />
+        <ion-label>User List</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button class="home-tab-message" tab="message-page">
+        <img class="home-tab-msg-img" src="../../../assets/images/home_tab_message.png" />
+        <ion-label>Message</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="tinder-like-page">
+          <ion-icon class="tinder-like-page-icon" ios="ios-heart" md="md-heart"></ion-icon>
+          <ion-label class="tinder-like-page-label">Tinder like</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button class="home-tab-chat" (click)="displayChat()">
+        <img class="home-tab-chat-img" src="../../../assets/images/home_tab_info.png" />
+        <ion-label>Chats</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button class="home-tab-profile" tab="profile-page">
+        <img class="home-tab-profile-img" src="../../../assets/images/home_tab_person.png" />
+        <ion-label>Profile</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs-->
+
+
+<!--ion-fab vertical="bottom" horizontal="center" slot="fixed">
+  <ion-fab-button color="#e0e0e0">
+      <ion-icon ios="ios-heart" md="md-heart" color="primary"></ion-icon>
+  </ion-fab-button>
+</ion-fab-->

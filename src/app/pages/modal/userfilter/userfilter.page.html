@@ -1,0 +1,71 @@
+
+<ion-content>
+  <div class="userlist-filter-setting">
+    <div class="userlist-filter-setting-header">
+      Ayarlar
+    </div>
+
+    <div class="userlist-filter-setting-content">
+      <ion-card>      
+        <ion-card-content>
+          <div class="main-settings-title">
+              Kesif
+          </div>
+          <div>
+            <div class="main-settings-search-sex">
+              Aradigim Cinsiyet
+            </div>
+            <div class="main-settings-search-sex-condition">
+              <ion-button class="main-settings-search-male">Erkekler</ion-button>
+              <ion-button class="main-settings-search-male">Kadinlar</ion-button>
+              <ion-button class="main-settings-search-male">Her ikisi</ion-button>
+            </div>
+          </div>
+
+          <div>
+            <div class="main-settings-search-age">
+              Yas
+            </div>
+            <div class="main-settings-search-age-condition">
+              <ion-range class="main-settings-search-age-range" dual-knobs pin color="primary">
+                <ion-label slot="start">18</ion-label>
+                <ion-label slot="end">99</ion-label>
+              </ion-range>
+            </div>
+          </div>
+
+          <div>
+            <div class="main-settings-search-region">
+              Oertalama Mesafe
+            </div>
+            <div class="main-settings-search-region-condition">
+              <ion-range class="main-settings-search-region-range" dual-knobs pin color="primary">
+                <ion-label slot="start">-200</ion-label>
+                <ion-label slot="end">200</ion-label>
+              </ion-range>
+            </div>
+          </div>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card>
+          <ion-card-content class="other-settings">
+            <div class="other-settings-title">
+              Diger Ayarlar
+            </div>
+            <div class="other-settings-part">
+              <ion-item>
+                <ion-label>Telefon numaram gozuksun</ion-label>
+                <ion-toggle slot="end" color="primary" ></ion-toggle>
+              </ion-item>
+
+              <ion-item>
+                <ion-label>Bildirim Mesafe</ion-label>
+                <ion-toggle slot="end" color="primary" checked></ion-toggle>
+              </ion-item>
+            </div>
+          </ion-card-content>
+        </ion-card>
+    </div>
+  </div>
+</ion-content>

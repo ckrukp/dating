@@ -1,0 +1,31 @@
+.vip-other-settings-part {
+    width:100%;
+}
+
+.vip-other-settings-part ion-row ion-col ion-button {
+    width:100%;
+}
+
+ion-footer {
+    width:100%;
+}
+
+.vip-other-settings-result-btn div {
+    display:inline-block;
+    width:50%;
+    text-align: center;
+    height: 40px;
+    padding-top:10px;
+    font-family: 'SF-Pro-Display-Semibold';
+    font-size:17px;
+}
+
+.vip-other-settings-cancel-btn{
+    background-color:#dce0e9;
+    color:#a3a9b5;
+}
+
+.vip-other-settings-ok-btn{
+    background-color:#ea1c5c;
+    color:#fff;
+}

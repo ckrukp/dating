@@ -1,0 +1,109 @@
+
+
+<ion-content class="login-win">
+
+  <div class="login-signup-header">
+    <div class="login-signup-title">
+      <div class="logo"></div>
+      <div class="title">TikTak Partner</div>
+    </div>
+  </div>
+
+  <div class="login-signup-tab">
+    <div class="login-form-btn" (click)="displayLogin()" [style.color]="labelColor1" [style.border-bottom]="borderLabel1">Giris</div>
+    <div class="signup-form-btn" (click)="displaySignup()" [style.color]="labelColor2" [style.border-bottom]="borderLabel2">Kayit Ol</div>
+  </div>
+
+  <div class="login-signup-content">
+    <div class="login-form-part" *ngIf="hideLogin">
+      <form class="login-form">
+        <ion-card>
+          <ion-item>
+            <ion-label position="floating">Telefon veya Kullanici adi</ion-label>
+            <ion-input></ion-input>
+          </ion-item>
+
+          <ion-item>
+              <ion-label position="floating">Parola</ion-label>
+              <ion-input type="password" required="true"></ion-input>
+              <ion-icon name="eye" color="primary" slot="end" align-self-center></ion-icon>
+          </ion-item>
+          
+          <ion-item class="login-forgot-item">
+            <ion-label class="login-forgot-pwd">Unuttum?</ion-label>
+          </ion-item>
+          
+        </ion-card>
+
+        <ion-button type="submit" color="primary" expand="block" class="submit-login" (click)="displayTabs()">Giris</ion-button>
+      </form>
+    </div>
+
+    <div class="signup-form-part" *ngIf="hideSignup">
+      <form class="signup-form">
+        <ion-card>
+          <ion-item>
+            <ion-label position="floating">Kullanici</ion-label>
+            <ion-input></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="floating">Parola</ion-label>
+            <ion-input type="password" required="true"></ion-input>
+            <ion-icon name="eye" color="primary" slot="end" align-self-center></ion-icon>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="floating">Cep Numaraniz</ion-label>
+            <ion-input></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="floating">Cinsiyetiniz</ion-label>
+            <ion-select>
+              <ion-select-option>XX57594147</ion-select-option>
+            </ion-select>
+          </ion-item>
+
+          <ion-item>
+              <ion-label color="primary" position="floating">Dogum Tarih</ion-label>
+              <ion-input required="true"></ion-input>
+              <ion-icon name="calendar" color="primary" slot="end" align-self-center></ion-icon>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="floating">Sehir</ion-label>
+            <ion-select>
+              <ion-select-option>Cibadak, Sukabumi</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-card>
+
+        <ion-button type="submit" color="primary" expand="block" class="submit-signup">Kayit Ol</ion-button>
+      </form>
+    </div>
+  </div>
+
+  <div class="login-social">
+
+    <div class="login-social-title">
+      <img src="../../assets/images/login-small-line.png"  />
+      <ion-label>Sosyal Giriş</ion-label>
+      <img src="../../assets/images/login-small-line.png" />
+    </div>
+
+    <div class="login-social-imgs">
+      <img class="social-icon" src="../../assets/images/social-login-fb.png" />
+      <img class="social-icon" src="../../assets/images/social-login-g.png" />
+      <img class="social-icon" src="../../assets/images/social-login-tw.png" />
+      <img class="social-icon" src="../../assets/images/social-login-in.png" />
+    </div>
+  </div>
+
+  <div class="login-bottom">
+    <ion-label>
+      By log in you agree to KoCart Activities Authority <br /><a>Conditions of</a> use and <a>Privacy Policy</a>
+    </ion-label>
+  </div>
+
+</ion-content>

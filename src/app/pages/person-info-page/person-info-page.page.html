@@ -1,0 +1,82 @@
+
+<ion-content>
+  <div class="photo-header-carousel">
+    <ion-slides class="photo-header-carousel-slides" [options]="slideOptsOne" pager>
+      <ion-slide *ngFor="let image of image_array" ui-draggable="true">
+        <div class="photo-header-carousel-slide"><img class="thumb-img" src="{{image}}" imageViewer /></div>
+      </ion-slide>
+    </ion-slides>
+  </div>
+  
+  <div class="person-info-content">
+    <ion-card>
+        <ion-card-content>
+          <div class="person-info-content-simple-header">
+            <ion-label class="person-info-content-name">Preity Zinta, 21 </ion-label>
+            <ion-img class="person-info-content-sex" src="../../../assets/images/female_icon_white.svg"></ion-img>
+          </div>
+
+          <div class="person-info-content-simple-content">
+            <ion-img class="person-info-content-position-img" src="../../../assets/images/profilim_o_content_gps.png"></ion-img>
+            <ion-label class="person-info-content-position-label">London, England   </ion-label>
+            <ion-badge class="person-info-content-position-distance">28km Yakinda</ion-badge>
+          </div>
+        </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-content>
+        <div class="person-info-content-table-header">
+          Hakkinda
+        </div>
+
+        <div class="person-info-content-table-content">
+            Her animda benimle ulucak beni uzmicek beni el ustunde
+            tutucak biri varsa ben burdayim onu bekliyorum
+        </div>
+
+        <div class="person-info-content-table">
+          <table>
+            <tr>
+              <td class="person-info-content-td-title">Mesafe</td>
+              <td class="person-info-content-td-content">28km yakinda</td>
+            </tr>
+            <tr>
+              <td class="person-info-content-td-title">Aridigi Cinsiyet</td>
+              <td class="person-info-content-td-content">Erkek</td>
+            </tr>
+            <tr>
+              <td class="person-info-content-td-title">Yas Araligi</td>
+              <td class="person-info-content-td-content">18-70</td>
+            </tr>
+            <tr>
+              <td class="person-info-content-td-title">Telefon numarasi</td>
+              <td class="person-info-content-td-content">Sadece VIP uyeler gorebilir</td>
+            </tr>
+          </table>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+</ion-content>
+
+<ion-footer class="person-info-footer-container">
+  <div class="person-info-footer">
+    <div class="person-info-footer-like">
+      <img src="../../../assets/images/info_content_like.png" />
+    </div>
+    <div class="person-info-footer-dislike">
+      <img src="../../../assets/images/info_content_dislike.png" />
+    </div>
+    <div class="person-info-footer-call">
+      <img src="../../../assets/images/info_content_call.png" />
+    </div>
+    <div class="person-info-footer-person">
+      <img src="../../../assets/images/info_content_person.png" />
+    </div>
+    <div class="person-info-footer-message">
+      <img src="../../../assets/images/info_content_message.png" />
+    </div>
+  </div>
+</ion-footer>

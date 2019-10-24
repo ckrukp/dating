@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Payment</ion-title>
+    <ion-icon class="vip-payment-close" slot="end" name="md-close-circle" color="primary" (click)="closePayment()"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="vip-payment-list">
+    <ion-card>
+      <ion-item lines="none">
+        <ion-icon class="vip-payment-item-icon" name="md-add-circle" slot="start" color="medium"></ion-icon>
+        <ion-label class="vip-payment-item-label">
+          <div class="vip-payment-item-title">
+            Finn
+          </div>
+          <div class="vip-payment-item-comment">
+            I'm a big deal
+          </div>
+        </ion-label>
+        <ion-label class="vip-payment-item-price" slot="end">$69.00</ion-label>
+      </ion-item>
+    </ion-card>
+    
+    <ion-card>
+      <ion-item lines="none">
+        <ion-icon class="vip-payment-item-icon" name="md-checkmark-circle" slot="start" color="primary"></ion-icon>
+        <ion-label class="vip-payment-item-label">
+          <div class="vip-payment-item-title">
+            Finn
+          </div>
+          <div class="vip-payment-item-comment">
+            I'm a big deal
+          </div>
+        </ion-label>
+        <ion-label class="vip-payment-item-price" slot="end">$45.00</ion-label>
+      </ion-item>
+    </ion-card>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <div class="vip-paynow-btn">SIMDI ODE</div>
+  <div class="vip-dankartrans-btn" (click)="displayDankarTransform()">DANKA HAVALESI</div>
+</ion-footer>

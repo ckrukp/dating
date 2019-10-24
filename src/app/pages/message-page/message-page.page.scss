@@ -1,0 +1,140 @@
+/////---------------------------------home header---------------------------------
+
+.home-header {
+    --background: none;
+    background-image: url('../../../assets/images/home_header_shadow.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% 140px;
+    background-color: #ea1c5c;
+    height:140px;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.home-header-call, .home-header-vip {
+    width: 32px;
+    height: 32px;
+}
+
+.home-header-call {
+    --background: none;
+    background-image: url('../../../assets/images/home_header_call_count.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    font-size:10px;
+    padding-top:7px;
+    padding-left:5px;
+}
+
+.home-header-vip{
+    float:right;
+}
+
+.home-header-title {
+    width:calc(100% - 72px);
+    font-family: 'SF-Pro-Display-Semibold';
+    font-size:24px;
+}
+
+.home-header-title-part {
+    width:100%;
+    padding-right:20px;
+    padding-left:20px;
+    padding-top:50px;
+    letter-spacing: 1px;
+    text-align: center;
+    color:#fff;
+}
+
+.home-header-title-part div {
+    display:inline-block;
+    vertical-align: middle;
+}
+
+
+
+/////---------------------------------content---------------------------------
+
+.message-content {
+    padding-left:15px;
+    padding-right:15px;
+    margin-top:-20px;
+}
+
+.message-searchbar {
+    border-radius: 10px;
+    color:#c3c9d7;
+    box-shadow: 0px 5px 5px #eeeeee;
+}
+
+.message-searchbar-icon {
+    color:#fcc31d !important;
+}
+
+.message-count {
+    vertical-align: middle;
+    color: #ea1c5c;
+    font-family: 'SF-Pro-Display-Regular';
+    font-size:13px;
+    padding:20px 0px 20px 0px;
+}
+
+.message-count-number {
+    color: #fff;
+    background-color: #ea1c5c;
+    padding: 2px 8px 2px 8px;
+    border-radius: 5px;
+}
+
+.message-count-label {
+    padding-left:10px;
+}
+
+.message-item-avatar {
+    width:60px;
+    height:60px;
+}
+
+.message-item-avatar-connect {
+    width:15px;
+    height:15px;
+    margin-top:-15px;
+    margin-left:45px;
+}
+
+.message-item-more {
+    color:#7d8492;
+    width:20px;
+    margin-top: -40px;
+}
+
+.message-item-title{
+    font-family: 'SF-Pro-Display-Semibold';
+    font-size:20px;
+}
+
+.message-item-time {
+    color:#b3b9c7;
+    font-family: 'SF-Pro-Display-Light';
+    font-size:13px;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+
+.message-item-comment {
+    color: #9a9da4;
+    font-family: 'SF-Pro-Display-Light';
+    font-size:16px;
+}
+
+.message-item-comment ion-badge{
+    margin-bottom: -5px;
+}
+
+.message-list ion-card{
+    margin-top:0px;
+    margin-bottom:5px;
+}
+
+

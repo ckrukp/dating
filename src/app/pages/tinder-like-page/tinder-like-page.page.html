@@ -1,0 +1,67 @@
+<ion-content>
+  <div class="home-header">
+    <div class="home-header-title-part">
+      <div class="home-header-call" id="home-header-call">
+        50
+      </div>
+      <div class="home-header-title">Tinder like</div>
+      <div class="home-header-vip" id="home-header-vip">
+        <ion-img src="../../../assets/images/home_header_vip_eclipse.png" (click)="displayVIPSettings()"></ion-img>
+      </div>
+    </div>
+  </div>
+
+  <div class="tinderlike-content">
+    <div class="tinderlike-carousel">
+      <div class="tinderlike-carousel-item" #card_container>
+        <div *ngFor="let image of image_array; let i = index" [attr.data-index]="i" ui-draggable="true" class = "tinkerlike-sliding-card" 
+        [ngClass]="i == slide_count - 1 ? 't-p-15' : i == slide_count - 2 ? 'p-h-12 o-60' : i <= slide_count - 3 ? 'p-h-24 t-m-15 o-30' : '' ">
+          <div class="tinderlike-carousel-slide"><img class="thumb-img" src="{{image}}" imageViewer /></div>
+
+          <div class="tinderlike-simple-info">
+            <div class="tinderlike-simple-info-con">
+
+              <div class="tinderlike-simple-info-check" id="tinderlike-simple-info-check-id-{{i}}" >
+              </div>
+
+              <div class="tinderlike-simple-arrow-div">
+                <img class="tinderlike-simple-arrow-img" src="../../../assets/images/arrow_up_icon.png" />
+              </div>
+              <div class="tinderlike-simple-info-header">
+                <ion-label class="tinderlike-simple-info-name">{{name_array[i]}}, {{age_array[i]}} </ion-label>
+                <ion-img *ngIf="sex_array[i] === 1" class="tinderlike-simple-info-sex" src="../../../assets/images/female_icon_red.svg"></ion-img>
+                <ion-img *ngIf="sex_array[i] === 0" class="tinderlike-simple-info-sex" src="../../../assets/images/male_icon_red.svg"></ion-img>
+              </div>
+    
+              <div class="tinderlike-simple-info-content">
+                <ion-img class="tinderlike-simple-info-position-img" src="../../../assets/images/profilim_o_content_gps.png"></ion-img>
+                <ion-label class="tinderlike-simple-info-position-label">{{gps_array[i]}}</ion-label>
+              </div>
+
+              <ion-badge class="tinderlike-simple-info-position-distance">{{distance_array[i]}}</ion-badge>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+  </div>
+</ion-content>
+
+<ion-footer>
+    <div class="tinderlike-select-part">
+        <div class="part">
+          <div class="tinderlike-select-filter">
+            <img class="tinderlike-select-filter-btn" src="../../../assets/images/profilim_o_content_filter.png" />
+          </div>
+          <div class="tinderlike-select-button">
+            <img class="tinderlike-select-dislike-btn" src="../../../assets/images/profilim_o_content_dislike.png" (click)="onDislike()" />
+            <img class="tinderlike-select-like-btn" src="../../../assets/images/profilim_o_content_like.png" (click)="onLike()"/>
+          </div>
+          <div class="tinderlike-select-info">
+            <img class="tinderlike-select-info-btn" src="../../../assets/images/profilim_o_content_info.png" />
+          </div>
+        </div>
+      </div>
+</ion-footer>

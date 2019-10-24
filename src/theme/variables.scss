@@ -1,0 +1,393 @@
+// Ionic Variables and Theming. For more info, please see:
+// http://ionicframework.com/docs/theming/
+
+/** Ionic CSS Variables **/
+:root {
+  /** primary **/
+  --ion-color-primary: #ea1c5c;
+  --ion-color-primary-rgb: 56, 128, 255;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+  --ion-color-primary-shade: #c41a50;
+  --ion-color-primary-tint: #c7577a;
+
+  /** secondary **/
+  --ion-color-secondary: #0cd1e8;
+  --ion-color-secondary-rgb: 12, 209, 232;
+  --ion-color-secondary-contrast: #ffffff;
+  --ion-color-secondary-contrast-rgb: 255, 255, 255;
+  --ion-color-secondary-shade: #0bb8cc;
+  --ion-color-secondary-tint: #24d6ea;
+
+  /** tertiary **/
+  --ion-color-tertiary: #7044ff;
+  --ion-color-tertiary-rgb: 112, 68, 255;
+  --ion-color-tertiary-contrast: #ffffff;
+  --ion-color-tertiary-contrast-rgb: 255, 255, 255;
+  --ion-color-tertiary-shade: #633ce0;
+  --ion-color-tertiary-tint: #7e57ff;
+
+  /** success **/
+  --ion-color-success: #10dc60;
+  --ion-color-success-rgb: 16, 220, 96;
+  --ion-color-success-contrast: #ffffff;
+  --ion-color-success-contrast-rgb: 255, 255, 255;
+  --ion-color-success-shade: #0ec254;
+  --ion-color-success-tint: #28e070;
+
+  /** warning **/
+  --ion-color-warning: #ffce00;
+  --ion-color-warning-rgb: 255, 206, 0;
+  --ion-color-warning-contrast: #ffffff;
+  --ion-color-warning-contrast-rgb: 255, 255, 255;
+  --ion-color-warning-shade: #e0b500;
+  --ion-color-warning-tint: #ffd31a;
+
+  /** danger **/
+  --ion-color-danger: #f04141;
+  --ion-color-danger-rgb: 245, 61, 61;
+  --ion-color-danger-contrast: #ffffff;
+  --ion-color-danger-contrast-rgb: 255, 255, 255;
+  --ion-color-danger-shade: #d33939;
+  --ion-color-danger-tint: #f25454;
+
+  /** dark **/
+  --ion-color-dark: #222428;
+  --ion-color-dark-rgb: 34, 34, 34;
+  --ion-color-dark-contrast: #ffffff;
+  --ion-color-dark-contrast-rgb: 255, 255, 255;
+  --ion-color-dark-shade: #1e2023;
+  --ion-color-dark-tint: #383a3e;
+
+  /** medium **/
+  --ion-color-medium: #edeff4;
+  --ion-color-medium-rgb: 152, 154, 162;
+  --ion-color-medium-contrast: #ffffff;
+  --ion-color-medium-contrast-rgb: 255, 255, 255;
+  --ion-color-medium-shade: #86888f;
+  --ion-color-medium-tint: #a2a4ab;
+
+  /** light **/
+  --ion-color-light: #f4f5f8;
+  --ion-color-light-rgb: 244, 244, 244;
+  --ion-color-light-contrast: #000000;
+  --ion-color-light-contrast-rgb: 0, 0, 0;
+  --ion-color-light-shade: #d7d8da;
+  --ion-color-light-tint: #f5f6f9;
+  
+}
+
+@font-face {
+  font-family: 'SF-Pro-Display-Black';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../assets/fonts/SF-Pro-Display-Black.otf');
+}
+
+@font-face {
+  font-family: 'SF-Pro-Display-BlackItalic';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../assets/fonts/SF-Pro-Display-BlackItalic.otf');
+}
+
+@font-face {
+  font-family: 'SF-Pro-Display-Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../assets/fonts/SF-Pro-Display-Bold.otf');
+}
+
+@font-face {
+  font-family: 'SF-Pro-Display-BoldItalic';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../assets/fonts/SF-Pro-Display-BoldItalic.otf');
+}
+
+@font-face {
+  font-family: 'SF-Pro-Display-Heavy';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../assets/fonts/SF-Pro-Display-Heavy.otf');
+}
+
+@font-face {
+  font-family: 'SF-Pro-Display-HeavyItalic';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../assets/fonts/SF-Pro-Display-HeavyItalic.otf');
+}
+
+@font-face {
+  font-family: 'SF-Pro-Display-Light';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../assets/fonts/SF-Pro-Display-Light.otf');
+}
+
+@font-face {
+  font-family: 'SF-Pro-Display-LightItalic';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../assets/fonts/SF-Pro-Display-LightItalic.otf');
+}
+
+@font-face {
+  font-family: 'SF-Pro-Display-Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../assets/fonts/SF-Pro-Display-Medium.otf');
+}
+
+@font-face {
+  font-family: 'SF-Pro-Display-MediumItalic';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../assets/fonts/SF-Pro-Display-MediumItalic.otf');
+}
+
+@font-face {
+  font-family: 'SF-Pro-Display-Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../assets/fonts/SF-Pro-Display-Regular.otf');
+}
+
+@font-face {
+  font-family: 'SF-Pro-Display-RegularItalic';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../assets/fonts/SF-Pro-Display-RegularItalic.otf');
+}
+
+@font-face {
+  font-family: 'SF-Pro-Display-Semibold';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../assets/fonts/SF-Pro-Display-Semibold.otf');
+}
+
+@font-face {
+  font-family: 'SF-Pro-Display-SemiboldItalic';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../assets/fonts/SF-Pro-Display-SemiboldItalic.otf');
+}
+
+@font-face {
+  font-family: 'SF-Pro-Display-Thin';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../assets/fonts/SF-Pro-Display-Thin.otf');
+}
+
+@font-face {
+  font-family: 'SF-Pro-Display-ThinItalic';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../assets/fonts/SF-Pro-Display-ThinItalic.otf');
+}
+
+@font-face {
+  font-family: 'SF-Pro-Display-Ultralight';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../assets/fonts/SF-Pro-Display-Ultralight.otf');
+}
+
+@font-face {
+  font-family: 'SF-Pro-Display-UltralightItalic';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../assets/fonts/SF-Pro-Display-UltralightItalic.otf');
+}
+
+@font-face {
+  font-family: 'SF-Pro-Text-Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../assets/fonts/SF-Pro-Text-Bold.otf');
+}
+
+@font-face {
+  font-family: 'SF-Pro-Text-BoldItalic';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../assets/fonts/SF-Pro-Text-BoldItalic.otf');
+}
+
+@font-face {
+  font-family: 'SF-Pro-Text-Heavy';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../assets/fonts/SF-Pro-Text-Bold.otf');
+}
+
+@font-face {
+  font-family: 'SF-Pro-Text-HeavyItalic';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../assets/fonts/SF-Pro-Text-BoldItalic.otf');
+}
+
+@font-face {
+  font-family: 'SF-Pro-Text-Light';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../assets/fonts/SF-Pro-Text-Light.otf');
+}
+
+@font-face {
+  font-family: 'SF-Pro-Text-LightItalic';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../assets/fonts/SF-Pro-Text-LightItalic.otf');
+}
+
+@font-face {
+  font-family: 'SF-Pro-Text-Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../assets/fonts/SF-Pro-Text-Medium.otf');
+}
+
+@font-face {
+  font-family: 'SF-Pro-Text-MediumItalic';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../assets/fonts/SF-Pro-Text-MediumItalic.otf');
+}
+
+@font-face {
+  font-family: 'SF-Pro-Text-Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../assets/fonts/SF-Pro-Text-Regular.otf');
+}
+
+@font-face {
+  font-family: 'SF-Pro-Text-RegularItalic';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../assets/fonts/SF-Pro-Text-RegularItalic.otf');
+}
+
+@font-face {
+  font-family: 'SF-Pro-Text-SemiboldItalic';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../assets/fonts/SF-Pro-Text-SemiboldItalic.otf');
+}
+
+@font-face {
+  font-family: 'SF-UI-Display-Black';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../assets/fonts/SF-UI-Display-Black.ttf');
+}
+
+@font-face {
+  font-family: 'SF-UI-Display-Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../assets/fonts/SF-UI-Display-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'SF-UI-Display-Heavy';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../assets/fonts/SF-UI-Display-Heavy.ttf');
+}
+
+@font-face {
+  font-family: 'SF-UI-Display-Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../assets/fonts/SF-UI-Display-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'SF-UI-Display-Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../assets/fonts/SF-UI-Display-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'SF-UI-Display-Semibold';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../assets/fonts/SF-UI-Display-Semibold.ttf');
+}
+
+@font-face {
+  font-family: 'SF-UI-Display-Thin';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../assets/fonts/SF-UI-Display-Thin.ttf');
+}
+
+@font-face {
+  font-family: 'SF-UI-Display-Ultralight';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../assets/fonts/SF-UI-Display-Ultralight.ttf');
+}
+
+@font-face {
+  font-family: 'SF-UI-Text-Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../assets/fonts/SF-UI-Text-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'SF-UI-Text-HeavyItalic';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../assets/fonts/SF-UI-Text-HeavyItalic.ttf');
+}
+
+@font-face {
+  font-family: 'SF-UI-Text-Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../assets/fonts/SF-UI-Text-Italic.ttf');
+}
+
+@font-face {
+  font-family: 'SF-UI-Text-Light';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../assets/fonts/SF-UI-Text-Light.ttf');
+}
+
+@font-face {
+  font-family: 'SF-UI-Text-Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../assets/fonts/SF-UI-Text-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'SF-UI-Text-MediumItalic';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../assets/fonts/SF-UI-Text-MediumItalic.ttf');
+}
+
+@font-face {
+  font-family: 'SF-UI-Text-Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../assets/fonts/SF-UI-Text-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'SF-UI-Text-Semibold';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../assets/fonts/SF-UI-Text-Semibold.ttf');
+}

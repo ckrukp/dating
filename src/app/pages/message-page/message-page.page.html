@@ -1,0 +1,72 @@
+<ion-content>
+
+  <div class="home-header">
+    <div class="home-header-title-part">
+      <div class="home-header-call" id="home-header-call">
+        50
+      </div>
+      <div class="home-header-title">Mesajlarim</div>
+      <div class="home-header-vip" id="home-header-vip">
+        <ion-img src="../../../assets/images/home_header_vip_eclipse.png" (click)="displayVIPSettings()"></ion-img>
+      </div>
+    </div>
+  </div>
+
+  <div class="message-content">
+    <div class="message-search">
+      <ion-item class="message-searchbar" lines="none">
+        <ion-input class="message-searchbar-input" placeholder="Search..."></ion-input>
+        <ion-icon class="message-searchbar-icon" name="search" slot="end"></ion-icon>
+      </ion-item>
+    </div>
+
+    <div class="message-count">
+      <ion-label class="message-count-number">302</ion-label>
+      <ion-label class="message-count-label">Adet yeni mesajiniz var</ion-label>
+    </div>
+  </div>
+
+  <div class="message-list">
+      <ion-card>
+        <ion-item lines="none">
+          <ion-avatar class="message-item-avatar" slot="start">
+            <img class="message-item-avatar-img"  src="../../../assets/photos/photo1.png">
+            <img class="message-item-avatar-connect" 
+              src="../../../assets/images/user-online-icon.png" />
+          </ion-avatar>
+          <ion-label class="message-item-content">
+            <div class="message-item-title">
+              Finn
+            </div>
+            <div class="message-item-time">
+              2 hours ago
+            </div>
+            <div class="message-item-comment">
+              <ion-badge color="danger">10</ion-badge><b>   I'm a big deal</b>
+            </div>
+          </ion-label>
+          <ion-icon class="message-item-more" name="more" slot="end"></ion-icon>
+        </ion-item>
+      </ion-card>
+
+      <ion-card>
+        <ion-item lines="none">
+          <ion-avatar class="message-item-avatar" slot="start">
+            <img src="../../../assets/photos/photo1.png">
+          </ion-avatar>
+          <ion-label class="message-item-content">
+            <div class="message-item-title">
+              Finn
+            </div>
+            <div class="message-item-time">
+              2 hours ago
+            </div>
+            <div class="message-item-comment">
+              I'm a big deal
+            </div>
+          </ion-label>
+          <ion-icon class="message-item-more" name="more" slot="end"></ion-icon>
+        </ion-item>
+    </ion-card>
+  </div>
+</ion-content>
